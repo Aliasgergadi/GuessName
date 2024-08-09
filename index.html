@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include SheetJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Survey Form</h2>
+        <form id="survey-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Your Guess:</label>
+                <input type="text" id="email" name="Guess" placeholder="Your Guess" required>
+            </div>
+            
+            <!-- Age Field -->
+            <!-- <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Your Age" min="1" max="100">
+            </div> -->
+            
+            <!-- Radio Buttons -->
+            <!-- <div class="form-group">
+                <label for="role">Which option best describes your role?</label>
+                <div>
+                    <input type="radio" id="student" name="role" value="student">
+                    <label for="student">Student</label>
+                </div>
+                <div>
+                    <input type="radio" id="teacher" name="role" value="teacher">
+                    <label for="teacher">Teacher</label>
+                </div>
+                <div>
+                    <input type="radio" id="developer" name="role" value="developer">
+                    <label for="developer">Developer</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="role" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+             -->
+            <!-- Dropdown Menu -->
+            <!-- <div class="form-group">
+                <label for="recommendation">Would you recommend this survey?</label>
+                <select id="recommendation" name="recommendation">
+                    <option value="definitely">Definitely</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="not-sure">Not sure</option>
+                </select>
+            </div> -->
+            
+            <!-- Text Area -->
+            <!-- <div class="form-group">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+            </div> -->
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Hidden Admin Button for Downloading Data as Excel -->
+        <button id="download-excel" style="display: none;">Download Survey Data as Excel</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
